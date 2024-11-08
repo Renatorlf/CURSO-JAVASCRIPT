@@ -1,0 +1,1 @@
+alert('Olá, tudo bem? seja bem vindo ao nosso curso de JS')
