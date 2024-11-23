@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JavaScript</title>
+
+    <style>
+        body{
+            text-align: center;
+            color:royalblue;
+        }
+
+        div{
+            margin: auto auto;
+            width: 80%;
+            height: 200px;
+            background: blueviolet;
+        }
+
+        input{
+            padding: 80px;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body><!--onmouseup="alert('Clicou na tela')"-->
+    <h1>Aprendendo JavaScript</h1>
+    <h2>Eventos JavaScript</h2>
+    <p id="texto"></p>
+
+    <!--Tag para testar o evento (ondblclick)-->
+    <button ondblclick="clicarAlertar()">Crique aqui</button><br><br>
+
+    <!--Tag para testar o evento (onchange)-->
+    <select onchange="mudou()" name="texte" id="itens">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+    <br><br>
+
+    <div id="texte" onmouseout="viraAzul()" onmouseover="viraVermelho()"></div><br>
+
+    <input onkeypress="teclaPressionada()" id="campoTexto" type="text" placeholder="Digite um texto">
+    
+    <script src="JavaScript/eventos.js"></script>
+</body>
+</html>
